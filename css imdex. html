@@ -1,0 +1,71 @@
+<div class="banner">
+  <h1>AZONE</h1>
+  <p>Luxury. Minimal. Powerful.</p>
+</div>
+.banner {
+  height: 80vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1491553895911-0055eca6402d");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+}
+
+.banner p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+<section class="section dark" id="products">
+  <h2>Featured Products</h2>
+
+  <div class="grid">
+    <!-- Hoodie -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" />
+      <h3>Azone Black Hoodie</h3>
+      <p>Luxury Streetwear</p>
+      <strong>$129</strong>
+      <a href="https://wa.me/971501234567?text=I%20want%20the%20Azone%20Black%20Hoodie" class="whatsapp-btn">Order on WhatsApp</a>
+    </div>
+
+    <!-- Watch -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" />
+      <h3>Azone Gold Watch</h3>
+      <p>Elegant • Timeless</p>
+      <strong>$199</strong>
+      <a href="https://wa.me/971501234567?text=I%20want%20the%20Azone%20Gold%20Watch" class="whatsapp-btn">Order on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+body {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+.card {
+  backdrop-filter: blur(8px);
+}
+
+img {
+  filter: contrast(1.05) brightness(0.95);
+}
