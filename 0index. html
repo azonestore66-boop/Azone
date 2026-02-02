@@ -1,0 +1,14 @@
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" />
+  <h3>Azone Gold Watch</h3>
+  <p>Elegant • Timeless</p>
+  <strong>$199</strong>
+
+  <a
+    href="https://wa.me/971501234567?text=Hi%20Azone,%20I%20want%20to%20order%20the%20Gold%20Watch%20for%20$199"
+    target="_blank"
+    class="whatsapp-btn"
+  >
+    Order on WhatsApp
+  </a>
+</div>
