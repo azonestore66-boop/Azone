@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azone — Where Premium Meets Purpose</title>
+
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --fg: #f5f5f5;
+      --muted: #b5b5b5;
+      --gold: #c9a24d;
+      --card: #141414;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 3px;
+      font-size: 1.2rem;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--fg);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      letter-spacing: 4px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin: 18px 0 32px;
+      font-size: 1.05rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 36px;
+      border-radius: 40px;
+      background: var(--gold);
+      color: #000;
+      font-weight: 600;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      background: #e0b85f;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 0;
+      text-align: center;
+      animation: slideUp 1s ease;
+    }
+
+    section.dark {
+      background: var(--card);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+      color: var(--gold);
+    }
+
+    section p {
+      max-width: 680px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    ul.features {
+      list-style: none;
+      margin-top: 40px;
+    }
+
+    ul.features li {
+      margin: 12px 0;
+      font-size: 1.05rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo">A<span>Z</span>ONE</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Collection</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="hero container">
+    <div>
+      <h1>AZONE</h1>
+      <p>Where Premium Meets Purpose</p>
+      <a href="#" class="btn">Explore Collection</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2>Crafted for the Bold</h2>
+      <p>
+        Azone is a modern premium brand built on confidence, minimalism,
+        and uncompromising quality. Every piece is designed to elevate
+        your everyday lifestyle.
+      </p>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="container">
+      <h2>Why Azone</h2>
+      <ul class="features">
+        <li>✓ Premium Materials</li>
+        <li>✓ Minimal Luxury Design</li>
+        <li>✓ Built for Modern Living</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Azone. All rights reserved.
+  </footer>
+
+</body>
+</html>
